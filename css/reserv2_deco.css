@@ -1,0 +1,81 @@
+.main{ position: relative;
+            z-index:1;
+            margin: auto;
+            color:#BFFFE6;
+        }
+        .GotoCenter{
+            width:811px;
+            position:relative;
+            margin:auto;
+        }
+        .reservh2{
+            width:811px; height:139px;
+            background:url(../images/reserve_h2.png) no-repeat;
+            text-indent:-9999px;
+            margin:50px auto 80px;
+        }
+        .con_can_a{ 
+            width:122px; height:18px;
+            background:url(../images/confirm_cancel_a.png) no-repeat;
+            text-indent: -9999px;
+            display: block;
+            position:absolute;
+            top:-120px;
+            left:344px;
+        }
+        .process{
+            width: 630px; height:150px;
+            margin: 0 auto 50px;
+            align-items: center;
+        }
+        .protext_1{
+            position:absolute;
+            font-size: 16px;
+            top:100px;
+            left:80px;
+        }
+        .protext_2{
+            position:absolute;
+            font-size: 16px;
+            top:100px;
+            left:370px;
+        }
+        .protext_3{
+            position:absolute;
+            font-size: 16px;
+            top:100px;
+            left:610px;
+        }
+        .table_deco{
+            margin: auto;
+        }
+
+        .table_deco td{
+            padding:10px;
+        }
+        .small{
+            width:70px;
+        }
+        .checktd{
+            text-align: center;
+        }
+        .submit_button{
+            width:100px; 
+            margin:0 auto 150px;
+        }
+        .submit{
+            display:flex; /*버튼안 텍스트 수직 아니고 수평 나열 */
+            width:80px; height:50px;
+            margin:20px auto 20px;
+            justify-content: center; /*까먹지 말기-> 가로중앙*/
+            align-items: center;/*세로중앙*/
+            background-color:#008638;
+            color:#BFFFE6; 
+            padding:20px;
+            border-radius:10px;
+            width:100%
+        }
+        .submit:hover{
+            border:1px solid #fff ; 
+            background-color:#4CBFAE; 
+        }

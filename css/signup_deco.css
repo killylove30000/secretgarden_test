@@ -1,0 +1,56 @@
+/*.footer{display:none} */
+    /*회원가입 유효하지 않음 알림은 넣는다면 어느 부분에 어떻게 진행할지 다시 한번 확인해보기-1)email  */
+    /*회원가입 코딩 참고: 오류알림 부분 지정 span태그 쓰기(잠시 보류)+ 이메일 주소별 셀렉트 옵션 넣기*/
+    /*main*/
+    .main{
+        color:#BFFFE6;
+        position:relative;
+        z-index: 1
+    }
+    .signup_info{
+        width:811px; height:139px;
+        background:url(../images/signup_h2.png) no-repeat;
+        margin:50px auto 80px;
+        text-indent: -9999px;
+    }
+    .table_deco{
+        width:640px;
+        margin:0 auto 20px;
+    }
+
+    .table_deco td{
+        padding:10px;
+    }
+    .small{
+        width:70px;
+    }
+
+    .custom-input:invalid:not(:placeholder-shown){
+        background-color: red;
+    }
+
+    .check{
+        text-align: center;
+    }
+    .button_deco{
+        display: block;
+        margin:10px auto 10px
+    }
+
+    button[type="submit"]{
+        padding:10px 90px;
+        background-color:#008638;
+        border-radius: 10px;
+        color:#BFFFE6;
+    }
+    button[type="submit"]:hover{
+        background-color:#4CBFAE;
+    }
+    .bottom_skip2 a{
+        display:block;
+        width:220px;
+        margin:0 auto 170px;
+    }
+    .bottom_skip2 a:hover{
+        color: #BFFFE6;
+    }

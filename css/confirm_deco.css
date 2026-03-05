@@ -1,0 +1,56 @@
+.main{
+        position:relative;
+        z-index: 1;
+        color:#BFFFE6;
+        margin:auto
+    }
+    .conf_title{
+        position: relative;
+        width:811px;
+        margin:auto;
+        margin:100px auto 80px;
+    }
+    .conf_title h2{
+        width:811px; height:139px;
+        background:url(../images/confirm_h2.png) no-repeat;
+        text-indent: -9999px;
+        margin:0 auto 5px;
+    }
+    .conf_title p{
+        color:#3BB281;
+        text-align: center;
+    }
+    .conf_title span{
+        color:#3BB281;
+        font-size:16px;
+        position:absolute;
+        top:100px;
+        left:350px
+    }
+    .table_deco{
+        margin:auto;
+    }
+    .table_deco td{
+        padding:20px;
+    }
+    .small{
+        width:70px;
+    }
+    .normal{
+        width:216px;
+    }
+    .submit{
+            display:block;
+            width:200px;
+            height:50px;
+            margin:0 auto 170px;
+            background-color:#008638;
+            color:#BFFFE6; 
+            border-radius:10px;
+        }
+
+    .submit:hover{
+            background-color:#4CBFAE; 
+            color:#BFFFE6; 
+        }
+    

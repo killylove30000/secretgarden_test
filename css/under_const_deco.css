@@ -1,0 +1,46 @@
+.main{
+            position:relative;
+            z-index: 1;
+        }
+        .construct{
+            position:relative;
+            margin:100px auto 280px;
+        }
+        .construct h2{
+            color:#fff;
+            width:300px;
+            margin:0 auto 10px;
+        }
+        .construct p{
+            color:aquamarine;
+            text-align: center;
+            margin-bottom:50px;
+        }
+        .construct img{
+            display:block;
+            margin:auto;
+        }
+        @keyframes ball{
+            0% {
+                transform: translateY(-30px);
+            }
+            95% {
+                width:337px;
+                height:258px;
+            }
+            to {
+                transform: translateY(0);
+                width:339px;
+                height:258px;
+            }
+
+        }
+        .vibe{
+            position:relative;
+            top:50%;
+            left:40%;
+            width:337px;
+            height:258px;
+            animation: ball 0.5s ease-in Infinite Alternate;
+        }
+        /*애니메이션 적용에 따라 하단부 푸터가 요동치는 순간이 있었음...ㅠㅠ*/

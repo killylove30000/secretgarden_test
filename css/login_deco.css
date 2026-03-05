@@ -1,0 +1,69 @@
+/*.footer{display:none} */
+    /*main*/
+    .main{
+        color:#BFFFE6;
+        position:relative;
+        z-index: 1
+    }
+
+    .deco_login{
+        width:813px;
+        height:400px;
+        margin:80px auto;
+    }
+    .login_info {
+        width:813px; height:200px;
+        background:url(images/loginInfo_h2.png) no-repeat;
+        text-indent:-9999px;
+    }
+    .log fieldset{
+            width: 300px;
+            margin:auto;
+    }
+
+    /*.log legend{
+        color:#00db5b;
+        font-size:25px;
+        font-weight:bold;
+        font-family: Playfair;
+        text-align: center;
+    }*/
+
+    .log label{
+        /*width:58px; height:20px; */
+        color:#BFFFE6;
+        font-weight: bold; 
+    }
+
+    .log input{
+        display:block;
+        margin:10px auto 20px;
+        border:1px solid #4CBFAE ; 
+        background-color:#fff; 
+        padding:20px;
+        border-radius:10px;
+        width:100%
+    }
+
+    .log button{
+            display: block;
+            margin:auto;
+        }
+    button[type="submit"]{
+        padding:10px 90px;
+        background-color:#008638;
+        border-radius: 10px;
+        color:#BFFFE6;
+    }
+    button[type="submit"]:hover{
+        background-color:#4CBFAE;
+    }
+    .bottom_skip a{
+        display:block;
+    }
+    .bottom_skip{
+        width:300px;
+        display:flex;
+        margin:0 auto 170px;
+        justify-content: space-evenly;
+    }

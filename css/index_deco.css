@@ -1,0 +1,35 @@
+.message{
+            position: relative;
+            display:block;
+            cursor: pointer;
+        }
+        .message a{
+            display:block;
+            width:600px;
+            height:600px;
+            margin:200px auto 100px;
+            cursor:url('../images/key_mouse.png')2 2, auto;
+        }
+        .message .messagetext {
+            visibility: hidden;
+            width: 600px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            Top: 10%; /* 요소 위에 위치 */
+            left: 50%;
+            
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .message:hover .messagetext {
+            visibility: visible; /* 오버 시 표시 */
+            opacity: 1;
+            background-color: #fff;
+            color: #000;
+        }

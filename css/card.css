@@ -1,0 +1,146 @@
+    /*카드 만들기*/
+        /*박스 사이징 시켜야 될것같아서 만들었는데 뭔가 틀이 틀어짐 */
+    .card_body{
+        
+        width:100%; 
+        min-height:800px; /*최소 높이 권장을 위해 작성되어짐.-> 고정된 vh로 작성했더니 오류 발생 */
+        overflow:hidden;
+        position: relative;
+    }
+    /*왜 overflow visible이 적용되는지 잘 모르겠음  */
+    .card_cont{
+        
+        width:100%; 
+        height:600px; /*카드 높이에 맞춰서 조절한 길이. 이전에 vh로 넣었더니 오류발생*/
+        perspective: 1000px; /*원근감 수치 조정 */
+        position: relative;
+        margin-top: 50px;
+    }
+    .cards{
+        position:relative;
+        width: 100%; height:100%; 
+        /*transform 3d효ㅘ는 직계 부모에게 넣어야 한다고 함*/
+        transform-style:preserve-3d;        
+        align-items: center;
+    }
+    /*그림자 넣으면 원근감 도움은 되는데 흐려짐 */
+    .card{
+        font-size: 18px;
+        font-weight: bold;
+        transition:all 0.5s ease-in-out;        
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform-origin: center center;
+        /*회전 중심축 고정 */
+        /*뒤집기할때 잔상을 없애준다고 함 */
+        backface-visibility:hidden;
+        -webkit-backface-visibility:hidden;
+    }
+    /*카드 순서별 위치 */
+    /*nth-of-type 으로 하려다 위치가 자꾸만 바뀌어서  클래스명 지정으로 바꿨음...
+    .card:nth-of-type(1),.card:nth-of-type(2), .card:nth-of-type(3){
+        transform:translate(calc(-50% - 300px), -50%) translateZ(-100px) rotateY(20deg);
+        opacity:0.5
+    }
+    .card:nth-of-type(4){
+        transform:translate(calc(-50% - 150px), -50%) translateZ(-50px) rotateY(10deg);
+        opacity:0.8
+    }*/
+
+    .card.p1, .card.p2, .card.p3{
+        transform:translate(calc(-50% - 300px), -50%) translateZ(-100px) rotateY(20deg); opacity:0.5; 
+    }
+    .card.p4{
+        transform:translate(calc(-50% - 150px),-50%) translateZ(-50px) rotateY(10deg); opacity:0.8; 
+    }
+    .card.p5{
+        transform:translate(-50%, -50%) translateZ(100px);
+    }
+    .card.p6{
+        transform:translate(calc(-50% + 150px), -50%) translateZ(-50px) rotateY(-10deg); opacity:0.8;
+    }
+    .card.p7, .card.p8, .card.p9{
+        transform:translate(calc(-50% + 300px), -50%) translateZ(-100px) rotateY(-20deg); opacity:0.5; 
+    }
+    
+    /*테마1*/
+    .th{
+        width:231px;
+        height:406px;
+        perspective:231px;
+        cursor:pointer;
+    }
+        /*카드 뒤집기*/
+    .th_inner{
+        position:relative;
+        width:100%;
+        height:100%;
+        margin:auto;
+        transition: transform 0.6s;
+        transform-style:preserve-3d;
+    }
+        /*Y축으로 180 돌려라*/
+    .th:hover .th_inner {
+    transform: rotateY(180deg);
+    }
+    .th_front, .th_back{
+        position: absolute;
+        width:100%; height:100%;
+        backface-visibility:hidden;
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+        box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    .th_front{
+        background-color: #000;
+        color:#BFFFE6;
+    }
+
+    .th_back{
+        background-color: #000;
+        color:#BFFFE6;
+        transform: rotateY(180deg);
+    }
+    .th_back>p{ padding:10px;}
+    .fake_button{
+        border: 1px solid #4CBFAE;
+        border-radius:10%;
+        position:absolute;
+        top:380px; left:70px;
+    }
+    .card_button {
+        border:1px solid #4CBFAE;
+        border-radius:10%;
+        position:absolute;
+        top:380px;
+        left:80px;
+    }
+    
+
+        /*방향키 왼/오*/
+
+    .left{
+        width:69px; height:130px;
+        background:url(../images/left.png) no-repeat;
+        text-indent:-9999px;
+        display:block;
+        position:absolute;
+        top:50%;
+        left:30%;
+    }
+    .right{
+        width:69px; height:130px;
+        background:url(../images/right.png) no-repeat;
+        text-indent:-9999px;
+        display:block;
+        position: absolute;
+        top:50%;
+        right:30%;
+    }
+    .left, .right{
+        z-index:50;
+        transform: translateY(-50%);
+    }

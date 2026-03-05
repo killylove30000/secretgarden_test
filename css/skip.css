@@ -1,0 +1,18 @@
+           /*바로가기*/
+    .skip_menu{
+        position:absolute;
+        top:-px;
+        left:0;
+        z-index: 1000
+    }
+    .skip_menu a{
+        position:absolute;
+        top:-30px;
+        padding:5px 10px;
+        white-space:nowrap;
+        background:#333;
+        color:#fff
+    }
+    .skip_menu a:focus{
+        top:0
+    }

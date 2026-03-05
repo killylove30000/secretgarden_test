@@ -1,0 +1,67 @@
+.main{ position: relative;
+            z-index:1;
+            margin: auto;
+            color:#BFFFE6;
+        }
+        .GotoCenter{
+            width:811px;
+            position:relative;
+            margin:auto;
+        }
+        .reservh2{
+            width:811px; height:139px;
+            background:url(../images/reserve_h2.png) no-repeat;
+            text-indent:-9999px;
+            margin:50px auto 80px;
+        }
+        .con_can_a{ 
+            width:122px; height:18px;
+            background:url(../images/confirm_cancel_a.png) no-repeat;
+            text-indent: -9999px;
+            display: block;
+            position:absolute;
+            top:-120px;
+            left:344px;
+        }
+        .process{
+            width: 630px; height:150px;
+            margin: 0 auto 50px;
+            align-items: center;
+        }
+        .protext_1{
+            position:absolute;
+            font-size: 16px;
+            top:100px;
+            left:80px;
+        }
+        .protext_2{
+            position:absolute;
+            font-size: 16px;
+            top:100px;
+            left:370px;
+        }
+        .protext_3{
+            position:absolute;
+            font-size: 16px;
+            top:100px;
+            left:610px;
+        }
+        .GotoCenter p{
+            text-align: center;
+            margin-bottom:50px;
+            font-size: 16px;
+        }
+        .move{
+            display:block;
+            width:200px;
+            height:50px;
+            margin:0 auto 100px;
+            background-color:#008638;
+            color:#BFFFE6; 
+            border-radius:10px;
+        }
+
+        .move:hover{
+            background-color:#4CBFAE; 
+            color:#BFFFE6; 
+        }

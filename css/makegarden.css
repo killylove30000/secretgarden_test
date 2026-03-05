@@ -1,0 +1,572 @@
+
+    /*.main, .footer {display:none}*/
+    /*reset*/
+    *{
+        margin:0; padding:0;
+        box-sizing:border-box;
+    }
+    body, h1, h2, h3, div, p, ul, li, table, tr, td {
+            margin: 0;
+            padding: 0
+        }
+    body{
+        font-family: "GamtanRoad Batang", "감탄로드 바탕체 TTF", Playfair, "돋음", "맑은 고딕", ariel;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    ul, li {
+        list-style-type: none;
+    }
+    a{
+        text-decoration:none;
+        color:#4CBFAE;
+    }
+    img, fieldset{
+            border: 0 none;
+        }
+    table{
+        border-collapse: collapse;
+        border-spacing:0;
+        padding:0;
+        margin:0;
+    }
+    tr, td{
+        padding:0;
+        border:0;
+    }
+    button{
+        cursor:pointer;
+        }
+
+        /*start*/
+    .wrap{
+            min-width:1000px;
+            overflow-x: hidden
+        }
+    .header{
+        height:121px;
+        border-top:1px solid #005e24;
+        position:relative;
+        z-index: 100
+    }
+    .together{
+        display:flex
+    }
+    .logo{
+        width:115px;
+        height:116px;
+        /*
+        margin-top:15px;
+        margin-left:16px;
+        */
+        margin: 15px 16px 108px 16px;
+    }
+    .logo a{
+        display:block;
+        width: 96px;
+        height: 116px;
+        background:url(../images/logo.png) no-repeat;
+        text-indent:-9999px;
+    }
+
+        /*gnb*/
+
+    .nav{
+        border-top: 1px solid #008638;
+        height:90px
+    }
+    .nav > ul{
+        margin: 30px 0 0 100px;
+        width: 1183px;
+        height: 100px;
+        display: flex;
+        justify-content:space-between
+    }
+    /*2depth 들어갔어야함 일단 menu라인은 1depth*/
+    .nav_bg{
+        background:rgba(0,0,0,0.5);
+        height:370px;
+    }
+    .nav ul ul li{
+        padding:10px;
+        width:160px;
+        text-align: center;
+    }
+    .menu1 > a{
+        width:160px; height:100px;
+        background:url(../images/About.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }
+    .menu2 > a{
+        width:160px; height:100px;
+        background:url(../images/theme.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }
+    .menu3 > a{
+        width:160px; height:100px;
+        background:url(../images/reservation.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }
+    .menu4 > a{
+        width:160px; height:100px;
+        background:url(../images/howToCome.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }
+    .menu5 > a{
+        width:160px; height:100px;
+        background:url(../images/notice.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }
+    .menu6 > a{
+        width:160px; height:100px;
+        background:url(../images/QnA.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }
+        /*top_menu*/
+    .top_menu {
+        width:1280px;
+        position:relative;
+    }
+        /*우측 상단으로 올려버려야함. 적용 범위가 넓은 탓인지 nav나 top_menu나 화면 길이 바뀌어도 딱히 변동이 없음;;  */
+    .top_menu > ul{
+        width:226px; height:40px;
+        display:flex;
+        position:absolute;
+        top:-230px;
+        right:-200px;
+        justify-content:space-between
+    }
+    /*.top_bg{
+        background:rgba(0,0,0,0.5);
+        height:50px;
+    }
+    .nav ul ul li{
+        padding:10px;
+        width:100px;
+        text-align: center;
+    }*/
+    .top_menu1 > a{
+        width:60px; height:16px;
+        background:url(../images/Top_reserve.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }
+    .top_menu2 > a{
+        width:50px; height:16px;
+        background:url(../images/Top_login.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }
+    .top_menu3 > a{
+        width:35px; height:15px;
+        background:url(../images/Top_SNS.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }
+        /*side bar?->main으로 옮겨야 할지 좀 고민해보기-> 구조상으로는 메인이 맞음...추후 주석 제거하기
+            +사이드바 이미지 재제작 및 지점들 텍스트 이미지 주의 */
+    .side_menu {
+        width:96px; height: 214px;
+        background:url(../images/sidebar.png) no-repeat;
+        margin: 0 0 0 18px;
+    }
+    .side_menu > h2{
+        width: 96px; height:30px;
+        background:url(../images/skip_branch.png) no-repeat;
+        text-indent: -9999px;
+    }
+
+    .skip_sm{
+        width:96px; height:17px;
+        background:url(../images/skip_sm.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }
+    .skip_dhr{
+        width:96px; height:17px;
+        background:url(../images/skip_dhr.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }
+    .skip_kd{
+        width:96px; height:17px;
+        background:url(../images/skip_kd.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }   
+    .skip_dsr{
+        width:96px; height:17px;
+        background:url(../images/skip_dsr.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    } 
+    .skip_hj{
+        width:96px; height:17px;
+        background:url(../images/skip_hj.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    } 
+    .skip_kd2{
+        width:96px; height:17px;
+        background:url(../images/skip_kd2.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    } 
+    .skip_gj{
+        width:96px; height:17px;
+        background:url(../images/skip_gj.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    } 
+    .skip_hh{
+        width:96px; height:17px;
+        background:url(../images/skip_hh.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    } 
+    .skip_jj{
+        width:96px; height:17px;
+        background:url(../images/skip_jj.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    } 
+        /*메인*/
+    .main{
+        color:#BFFFE6;
+        position:relative;
+        z-index: 1
+    }
+    .main_image_wr{
+        width:1280px;
+        margin:190px auto 368px;
+    }
+    .main_image{
+        width: 1280px; height:242px;
+        background:url(../images/Main_Text.png) no-repeat center;
+        text-indent:-9999px;
+    }
+        /*
+    main_deco > img { width:811}
+    .main_deco{
+        text-align:center
+    }
+        */
+    .secretgarden_ment{
+        width:1033px;
+        margin:0 auto 290px;
+    }
+    .secretgarden_ment > h2{
+        width:272px; height:42px;
+        background:url(../images/secretgarden_h2.png) no-repeat;
+        text-indent:-9999px;
+        display: block;
+        margin:0 auto 25px
+    }
+    .secretgarden_ment > p{
+        width:811px; height:49px;
+        background:url(../images/secretgarden_p.png) no-repeat;
+        text-indent:-9999px;
+        display: block;
+        margin:0 auto 35px;
+    }
+        /*.main_mentImage{
+        width:1033px;
+        margin:auto;
+        }*/
+    .signature_theme{
+        position:relative;
+    }
+    .signature_theme > h2{
+        width:496px; height:36px;
+        background:url(../images/signature_h2.png) no-repeat;
+        text-indent:-9999px;
+        display: block;
+        margin:0 auto 29px;
+    }
+    .signature_theme > p{
+        width:811px; height:49px;
+        background:url(../images/signature_p.png) no-repeat center;
+        text-indent:-9999px;
+        display: block;
+        margin:0 auto 30px;
+    }
+
+        /*카드 만들기*/
+    .card_cont{
+        margin:auto;
+        width:1000px;
+        overflow: hidden;
+    }
+    .cards{
+        position:relative;
+        display:flex;
+        transition: transform 0.5s ease;
+        margin:0 auto 445px;
+    }
+    /*테마1*/
+    .th1{
+        width:231px;
+        height:406px;
+        perspective:231px;
+        cursor:pointer;
+    }
+        /*카드 뒤집기*/
+    .th_inner{
+        position:relative;
+        width:100%;
+        height:100%;
+        margin:auto;
+        transition: transform 0.6s;
+        transform-style:preserve-3d;
+    }
+        /*Y축으로 180 돌려라*/
+    .th1:hover .th_inner {
+    transform: rotateY(180deg);
+    }
+    .th_front, .th_back{
+        position: absolute;
+        width:100%; height:100%;
+        backface-visibility:hidden;
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+        box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    .th_front{
+        background-color: #000;
+        color:#BFFFE6;
+    }
+
+    .th_back{
+        background-color: #000;
+        color:#BFFFE6;
+        transform: rotateY(180deg);
+    }
+
+    .card_button {
+        border:1px solid #4CBFAE;
+        border-radius:10%;
+        position:absolute;
+        top:380px;
+        left:90px;
+    }
+        /*테마2*/
+    .th2{
+        width:231px;
+        height:406px;
+        perspective:231px;
+        cursor:pointer;
+    }
+    .th2:hover .th_inner {
+        transform: rotateY(180deg);
+    }
+    .th3{
+        width:231px;
+        height:406px;
+        perspective:231px;
+        cursor:pointer;
+    }
+    .th3:hover .th_inner {
+        transform: rotateY(180deg);
+    }
+    .th4{
+        width:231px;
+        height:406px;
+        perspective:231px;
+        cursor:pointer;
+    }
+    .th4:hover .th_inner {
+        transform: rotateY(180deg);
+    }
+    .th5{
+        width:231px;
+        height:406px;
+        perspective:231px;
+        cursor:pointer;
+    }
+    .th5:hover .th_inner {
+        transform: rotateY(180deg);
+    }
+    .th6{
+        width:231px;
+        height:406px;
+        perspective:231px;
+        cursor:pointer;
+    }
+    .th6:hover .th_inner {
+        transform: rotateY(180deg);
+    }
+    .th7{
+        width:231px;
+        height:406px;
+        perspective:231px;
+        cursor:pointer;
+    }
+    .th7:hover .th_inner {
+        transform: rotateY(180deg);
+    }
+    .th8{
+        width:231px;
+        height:406px;
+        perspective:231px;
+        cursor:pointer;
+    }
+    .th8:hover .th_inner {
+        transform: rotateY(180deg);
+    }
+    .th9{
+        width:231px;
+        height:406px;
+        perspective:231px;
+        cursor:pointer;
+    }
+    .th9:hover .th_inner {
+        transform: rotateY(180deg);
+    }
+
+        /*방향키 왼/오*/
+
+    .left{
+        width:69px; height:130px;
+        background:url(../images/left.png) no-repeat;
+        text-indent:-9999px;
+        display:block;
+        position:absolute;
+        top:500px;
+        left:287px;
+    }
+    .right{
+        width:69px; height:130px;
+        background:url(../images/right.png) no-repeat;
+        text-indent:-9999px;
+        display:block;
+        position: absolute;
+        top:500px;
+        right:287px;
+    }
+    /*공지사항/이벤트*/
+    .notice_event{
+        width:1280px;
+        margin:0 auto 340px;
+        position:relative;
+    }
+    .notice_event > h2{
+        width:811px; height:49px;
+        background:url(../images/notice_event_h2.png) no-repeat center;
+        text-indent:-9999px;
+        display: block;
+        margin:0 auto 83px;
+    }
+    .notice_event td{
+        color:#000;
+        font-size:20px;
+    }
+    .NE_Wrap{
+        width:1037px;
+        display:flex;
+        margin:auto;
+    }  
+    .tab{
+        width:512px; 
+        position:relative;
+        display:flex;
+    }
+    .notice{
+        width:206px; height:51px;
+        background:url(../images/notice_tab.jpg) no-repeat;
+        text-indent:-9999px;
+        display: block;
+    }
+    .event{
+        width:206px; height:51px;
+        background:url(../images/event_tab.jpg) no-repeat;
+        text-indent:-9999px;
+        display: block;
+    }
+    .notice_page{
+        width:517px; height:378px;
+        background:url(../images/white.jpg) no-repeat center;
+        
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    
+    }
+    .event_page{
+        width:517px; height:378px;
+        background:url(../images/white.jpg) no-repeat center;
+    }
+    .more{
+        width:24px; height:24px;
+        background:url(../images/notice-plus.png) no-repeat;
+        text-indent:-9999px;
+        display: block;
+        position:absolute;
+        top: 150px;
+        left:550px;
+    }
+    /*이벤트 배너 부분에서 좀 막혔음. 중앙 정렬 해두면 될거같은데 아니면 위치 지정을 임의로 넣던가.. ㄱㄴ=*/
+    .banner{
+        width:520px; height:420px;
+        overflow:hidden;
+        position:relative;
+        align-items: center;
+    }
+    .banner > img{
+        position:absolute;
+        width:100%;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%, -50%);
+    }
+    
+    /*주의사항 안내*/
+    .notification > h2{
+        width:382px; height:40px;
+        background:url(../images/notification_h2.png) no-repeat;
+        text-indent:-9999px;
+        display:block;
+        margin:0 auto 66px;
+    }
+    .notification > p{
+        width:613px; height:267px;
+        background:url(../images/notification_pwrap.png) no-repeat;
+        text-indent:-9999px;
+        display:block;
+        margin:0 auto 217px;
+    }
+    /*그외 추가*/
+    .skiptotop{
+        position:relative
+    }
+    .GotoTop{
+        width:44px; height:44px;
+        background:url(../images/TOP_skip.png) no-repeat;
+        text-indent:-9999px;
+        display:block;
+        position:absolute;
+        top:-100px;
+        right:84px;
+    }
+    /*footer*/
+    .footer{
+        height:80px;
+        background:url(../images/foot_bg.jpg) repeat-x;
+        position:relative;
+        z-index: 10
+    }
+    .foot_deco{
+        padding:10px 0 0 0;
+    }
+    .footer p{
+        text-align: center;
+    }
+/*footer 텍스트 그대로 가도 괜찮...을것같...*/
+    

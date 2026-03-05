@@ -1,0 +1,14 @@
+    /*그외 추가*/
+    .skiptotop{
+        position:relative;
+        z-index: 200;
+    }
+    .GotoTop{
+        width:60px; height:60px;
+        background:url(../images/TOP_skip.svg) no-repeat;
+        text-indent:-9999px;
+        display:block;
+        position:fixed;
+        bottom:80px;
+        right:84px;
+    }

@@ -1,0 +1,277 @@
+    /*reset*/
+    *{
+        margin:0; padding:0;
+        box-sizing:border-box;
+        
+    }
+    body, h1, h2, h3, div, p, ul, li, table, tr, td {
+            margin: 0;
+            padding: 0;
+            
+        }
+    body{
+        font-family: "GamtanRoad Batang", "감탄로드 바탕체 TTF", Playfair, "돋음", "맑은 고딕", ariel;
+        font-size: 14px;
+        line-height: 1.5;
+
+    }
+    ul, li {
+        list-style-type: none;
+    }
+    a{
+        text-decoration:none;
+        color:#4CBFAE;
+    }
+    img, fieldset{
+            border: 0 none;
+        }
+    table{
+        border-collapse: collapse;
+        border-spacing:0;
+        padding:0;
+        margin:0;
+    }
+    tr, td{
+        padding:0;
+        border:0;
+    }
+    button{
+        cursor:pointer;
+        }
+
+        /*start*/
+    .wrap{
+            min-width:1000px;
+            overflow-x: hidden
+        }
+    .header{
+        height:121px;
+        border-top:1px solid #005e24;
+        position:relative;
+        z-index: 100
+    }
+    .together{
+        display:flex
+    }
+    .logo{
+        width:115px;
+        height:116px;
+        /*
+        margin-top:15px;
+        margin-left:16px;
+        */
+        margin: 15px 0px 108px 50px;
+    }
+    .logo a{
+        display:block;
+        width: 96px;
+        height: 116px;
+        background:url(../images/logo.png) no-repeat;
+        text-indent:-9999px;
+    }
+
+        /*gnb*/
+
+    .nav{
+        border-top: 1px solid #005e24;
+        height:90px
+    }
+    .nav > ul{
+        margin: 30px 0 0 100px;
+        width: 1100px;
+        height: 90px;
+        display: flex;
+        justify-content:center;
+    }
+    .nav ul li {
+        position: relative;
+    }
+    .nav > ul > li:hover > ul{
+        background:rgba(255, 255, 255, 0.3);
+        transition: background 0.3s;
+    } 
+    /*2depth 들어갔어야함 일단 menu라인은 1depth*/
+    .depth2{
+        display: none;
+        position: absolute;
+        top: 60px;
+        height:320px !important;
+        left: 0;
+        z-index: 200
+    }
+    .nav ul ul li{
+        padding:5px;
+        width:160px;
+        text-align: center;
+    }
+
+    .nav ul ul li a:hover{
+        color:#BFFFE6;
+    }
+
+        /*depth2 배경이 메뉴 너비만큼이 아니라 웹페이지 전체적으로 내려오는것으로 바뀌었는데, 이게 더 깔끔해보이긴함..  */
+    .nav_bg{
+        display:none;
+        position: absolute;
+        top: 91px; /* .nav 높이(90px) + 보더(1px) 이후에 위치 */
+        left: 0;
+        background:rgba(0,0,0,0.7);
+        width:100%;
+        height:320px;
+        z-index:100;
+    }
+
+    
+    .menu1 > a{
+        width:160px; height:100px;
+        background:url(../images/About.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }
+    .menu2 > a{
+        width:160px; height:100px;
+        background:url(../images/theme.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }
+    .menu3 > a{
+        width:160px; height:100px;
+        background:url(../images/reservation.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }
+    .menu4 > a{
+        width:160px; height:100px;
+        background:url(../images/howToCome.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }
+    .menu5 > a{
+        width:160px; height:100px;
+        background:url(../images/notice.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }
+    .menu6 > a{
+        width:160px; height:100px;
+        background:url(../images/QnA.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }
+        /*menu-mouse hover*/
+    .menu1 > a:hover{
+        background:url(../images/About-h.png) no-repeat;
+    }
+    .menu2 > a:hover{
+        background:url(../images/theme-h.png) no-repeat;
+    }
+    .menu3 > a:hover{
+        background:url(../images/reservation-h.png) no-repeat;
+    }
+    .menu4 > a:hover{
+        background:url(../images/howToCome-h.png) no-repeat;
+    }
+    .menu5 > a:hover{
+        background:url(../images/notice-h.png) no-repeat;
+    }
+    .menu6 > a:hover{
+        background:url(../images/QnA-h.png) no-repeat;       
+    }
+        /*top_menu*/
+    .top_menu {
+        width:1100px;
+        position:relative;
+    }
+        /*우측 상단으로 올려버려야함. 적용 범위가 넓은 탓인지 nav나 top_menu나 화면 길이 바뀌어도 딱히 변동이 없음;;  */
+    .top_menu > ul{
+        width: 300px; height:40px;
+        display:flex;
+        position:absolute;
+        top:-230px;
+        right:-200px;
+        justify-content:space-between
+    }
+    /*.top_menu ul ul li{
+        padding:5px;
+        text-align: center;
+        display: none;    
+    }*/
+
+    .top_menu1 > a{
+        width:60px; height:16px;
+        background:url(../images/Top_reserve.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }
+    .top_menu2 > a{
+        width:50px; height:16px;
+        background:url(../images/Top_login.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }
+    .top_menu2_2 > a{
+        width:60px; height:16px;
+        background:url(../images/Top_signup.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }
+    .top_menu3 > a{
+        width:35px; height:15px;
+        background:url(../images/Top_SNS.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }
+        /*top-mouse hover*/
+    .top_menu1 > a:hover{
+        background:url(../images/Top_reserve-h.png) no-repeat;
+    }
+    .top_menu2 > a:hover{
+        background:url(../images/Top_login-h.png) no-repeat;
+    }
+    .top_menu2_2 > a:hover{
+        background:url(../images/Top_signup-h.png) no-repeat;
+    }
+    .top_menu3 > a:hover{
+        background:url(../images/Top_SNS-h.png) no-repeat;
+    }
+        /*side_menu*/
+    .side_menu {
+        width:160px; height: 280px;
+        background:rgba(255,255,255,0.5);
+        border-radius: 10px;
+        margin: 0 0 0 50px;
+        position:fixed;
+    }
+    .side_menu > h2::before{
+        content:url(../images/smallrose.png);
+    }
+    .side_menu > h2{
+        font-size: 18px;
+        text-align: center;
+        width: 160px;
+        margin:4px auto 8px;
+    }
+        
+
+    .side_menu a{
+        text-align: center;
+        width:130px;
+        display:block;
+        margin:0 auto 2px;
+        color:#000;
+        font-size: 16px;
+        font-weight: bold;
+
+    }
+    .side_menu a:hover{ 
+        color:yellow;
+        /*color:#00692c;*/
+
+    }
+    /*.skip_dhr{
+        width:96px; height:17px;
+        background:url(../images/skip_dhr.png) no-repeat;
+        text-indent: -9999px;
+        display: block;
+    }*/
+    

@@ -1,0 +1,15 @@
+        /*footer*/
+    .footer{
+        height:80px;
+        background:url(../images/foot_bg.jpg) repeat-x;
+        position:relative;
+        z-index: 50;
+        font-size: 17px;
+    }
+    .foot_deco{
+        padding:10px 0 0 0;
+    }
+
+    .footer p{
+        text-align: center;
+    }

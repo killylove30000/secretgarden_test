@@ -1,0 +1,19 @@
+ /*팝업 박스*/
+    .popup_deco{
+        text-align: center;
+        background-color: white;
+        margin:15% auto;
+        padding: 20px;
+        width:320px;
+        border-radius:10px;
+    }
+    /*이게 팝업 꾸밀거 */
+    .popup{
+        display:none; 
+        position: fixed;
+        z-index: 9999;
+        left:0; top:0;
+        width:100%; height:100%;
+        background-color :rgba(0,0,0,0.5);
+        border: 1px solid #000;
+    }
